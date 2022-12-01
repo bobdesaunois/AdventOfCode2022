@@ -9,7 +9,7 @@ namespace DayOne.Services
         private CaloriesRepository Calories = new ();
 
         public async Task<List<CaloricCollection>> GetCaloricCollectionsAsync ()
-            => await Calories.GetCaloriesFromInputFile ();
+            => await Calories.GetCaloriesFromInputFileAsync ();
 
     }
 }

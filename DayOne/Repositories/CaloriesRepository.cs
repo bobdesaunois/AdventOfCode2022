@@ -5,7 +5,7 @@ namespace DayOne.Repositories
     public class CaloriesRepository
     {
 
-        public async Task<List<CaloricCollection>> GetCaloriesFromInputFile ()
+        public async Task<List<CaloricCollection>> GetCaloriesFromInputFileAsync ()
         {
 
             List<CaloricCollection> collections = new ();
