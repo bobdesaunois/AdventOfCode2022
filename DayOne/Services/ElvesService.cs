@@ -5,10 +5,10 @@ namespace DayOne.Services
     public class ElvesService
     {
 
-        public List<Elf> BuildElvesWithCaloricCollections (List<CaloricCollection> caloricCollections)
+        public List<Elf>? BuildElvesWithCaloricCollections (List<CaloricCollection> caloricCollections)
         {
 
-            List<Elf> elves = new ();
+            List<Elf>? elves = new ();
             foreach (CaloricCollection collection in caloricCollections)
                 elves.Add (new Elf { Calories = collection });
 

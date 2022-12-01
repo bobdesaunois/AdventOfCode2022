@@ -12,9 +12,17 @@ namespace DayOne
         public async Task RunAsync ()
         {
 
-            List<Elf> elves = Elves.BuildElvesWithCaloricCollections (
+            List<Elf>? elves = Elves.BuildElvesWithCaloricCollections (
                 await Calories.GetCaloricCollectionsAsync ()
                 );
+
+            if (elves?.Any () ?? false)
+            {
+
+                Console.WriteLine ("No elves and no contributions were found.");
+                return;
+
+            }
 
             Elf highestContributor = Elves.FindHighestContributor (elves);
 
