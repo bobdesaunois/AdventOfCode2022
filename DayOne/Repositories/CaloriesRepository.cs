@@ -8,8 +8,8 @@ namespace DayOne.Repositories
         public async Task<List<CaloricCollection>> GetCaloriesFromInputFile ()
         {
 
-            List<CaloricCollection> collections = new ();
-            CaloricCollection currentScope = new ();
+            List<CaloricCollection> collections     = new ();
+            CaloricCollection       currentScope    = new ();
             using StreamReader reader = File.OpenText ("input.txt");
             while ( ! reader.EndOfStream)
             {
