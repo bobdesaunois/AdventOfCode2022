@@ -25,9 +25,9 @@ namespace DayOne
 
             Console.WriteLine ("The top three highest contributors are the following elves:");
             foreach (Elf elf in threeHighestContributors)
-                Console.WriteLine ($"{elf.Id} with a contribution of {elf.Calories.GetTotalAmount()}");
+                Console.WriteLine ($"{elf.Id} with a contribution of {Elves.GetContribution (elf)}");
 
-            Console.WriteLine ($"Together they contributed a total of {threeHighestContributors.Sum (e => e.Calories.GetTotalAmount ())} calories");
+            Console.WriteLine ($"Together they contributed a total of {threeHighestContributors.Sum (e => Elves.GetContribution(e))} calories");
 
         }
 
