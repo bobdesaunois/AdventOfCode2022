@@ -4,6 +4,7 @@
     {
 
         public Guid ID { get; private set; } = Guid.NewGuid ();
+
         public int  Amount { get; set; }
 
     }
