@@ -1,1 +1,4 @@
-﻿new Program ();
+﻿using DayOne;
+
+await new ElfCalorieCounter ()
+    .RunAsync ();
