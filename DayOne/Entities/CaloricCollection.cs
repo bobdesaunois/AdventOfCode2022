@@ -3,10 +3,17 @@
     public class CaloricCollection
     {
 
-        public List<Calories> Calories { get; set; } = new ();
+        private List<Calories> Calories { get; set; } = new ();
 
         public int GetTotalAmount ()
             => Calories.Sum (c => c.Amount);
+
+        public void Add (Calories calories)
+        {
+
+            Calories.Add (calories);
+
+        }
 
     }
 }

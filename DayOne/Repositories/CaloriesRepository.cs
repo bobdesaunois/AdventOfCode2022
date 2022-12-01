@@ -21,7 +21,7 @@ namespace DayOne.Repositories
                 if (line.Length > 0)
                 {
 
-                    currentScope.Calories.Add (
+                    currentScope.Add (
                         new Calories
                         {
                             Amount = Convert.ToInt32 (line)
