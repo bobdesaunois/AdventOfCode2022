@@ -16,7 +16,7 @@ namespace DayOne
                 await Calories.GetCaloricCollectionsAsync ()
                 );
 
-            if (elves?.Any () ?? true)
+            if ( ! elves?.Any () ?? true)
             {
 
                 Console.WriteLine ("No elves and no contributions were found.");
