@@ -4,7 +4,7 @@
     {
 
         public Guid Id { get; private set; } = Guid.NewGuid ();
-        public CaloricCollection Calories = new ();
+        public CaloricCollection Calories { get; set; } = new ();
 
     }
 }
